@@ -1,5 +1,7 @@
 'use strict';
 
+// const mysql_config = require('./config.mysql.js');
+
 module.exports = appInfo => {
   const config = exports = {};
 
@@ -8,6 +10,18 @@ module.exports = appInfo => {
 
   // add your config here
   config.middleware = [];
+
+  config.mysql = {
+  	client:{
+		host: '39.106.56.103',
+		port: 3306,
+		user: 'yyf',
+		password: 'gt_yyfyyf',
+		database: 'ewomail',
+	},
+  	app: true,
+  	agent: false
+  };
 
   return config;
 };
