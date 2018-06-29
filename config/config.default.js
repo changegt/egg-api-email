@@ -13,14 +13,18 @@ module.exports = appInfo => {
 
   config.mysql = {
   	client:{
-		host: '39.106.56.103',
-		port: 3306,
-		user: 'yyf',
-		password: 'gt_yyfyyf',
-		database: 'ewomail',
-	},
+  		host: '39.106.56.103',
+  		port: 3306,
+  		user: 'yyf',
+  		password: 'gt_yyfyyf',
+  		database: 'ewomail',
+  	},
   	app: true,
   	agent: false
+  };
+
+  config.jsonp = {
+    whiteList: ['localhost','127.0.0.1'],
   };
 
   return config;

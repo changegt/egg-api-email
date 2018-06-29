@@ -7,3 +7,8 @@ exports.mysql = {
 	enabled: true,
 	package: 'egg-mysql'
 };
+
+exports.jsonp = {
+  enable: true,
+  package: 'egg-jsonp',
+};
